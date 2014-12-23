@@ -10,7 +10,7 @@
   <%= @link.url %>
 </p>
 
-<% if link.user == current_user %>
+<% if @link.user == current_user %>
 	<%= link_to 'Edit', edit_link_path(@link) %> |
 	<%= link_to 'Back', links_path %>
 <% end %>
