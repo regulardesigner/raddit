@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-
+# foundation gem for styling
+gem 'foundation-rails'
 # Devise gem for users
 gem 'devise', '~> 3.3.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
