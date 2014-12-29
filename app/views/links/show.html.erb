@@ -1,14 +1,18 @@
-<p id="notice"><%= notice %></p>
+<div class="website-content" style="margin-bottom:15px;">
+	<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @link.title %>
-</p>
+	<p>
+	  <strong>Title:</strong>
+	  <%= @link.title %>
+	</p>
 
-<p>
-  <strong>Url:</strong>
-  <%= @link.url %>
-</p>
+	<p>
+	  <strong>Url:</strong>
+	  <%= @link.url %>
+	</p>
+	
+	<span>&rarr; <a href="<%= @link.url %>" target="self">Aller sur le site</a></span>
+</div>
 
 <% if @link.user == current_user %>
 	<%= link_to 'Edit', edit_link_path(@link) %> |
